@@ -81,26 +81,26 @@ export function RoomModel(props) {
       />
     );
   }
-  function TexturedMesh() {
-    const workTexture = useLoader(THREE.TextureLoader, "work1.png");
-    workTexture.wrapS = THREE.RepeatWrapping;
-    workTexture.wrapT = THREE.RepeatWrapping;
-    workTexture.repeat.set(1, -1); // Flipping the texture
+  // function TexturedMesh() {
+  //   const workTexture = useLoader(THREE.TextureLoader, "work1.png");
+  //   workTexture.wrapS = THREE.RepeatWrapping;
+  //   workTexture.wrapT = THREE.RepeatWrapping;
+  //   workTexture.repeat.set(1, -1); // Flipping the texture
 
-    // Create a material with the texture
-    const material = new THREE.MeshStandardMaterial({
-      map: workTexture,
-    });
-    return (
-      <mesh
-        name="work_prev_01_0"
-        castShadow
-        receiveShadow
-        geometry={nodes.work_prev_01_0.geometry}
-        material={material}
-      />
-    );
-  }
+  //   // Create a material with the texture
+  //   const material = new THREE.MeshStandardMaterial({
+  //     map: workTexture,
+  //   });
+  //   return (
+  //     <mesh
+  //       name="work_prev_01_0"
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.work_prev_01_0.geometry}
+  //       material={material}
+  //     />
+  //   );
+  // }
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
@@ -260,7 +260,7 @@ export function RoomModel(props) {
           position={[14004.598, 252.46, 0.029]}
         />
         <group name="works_prev" position={[5730.657, 286.533, 2.865]}>
-          <TexturedMesh />
+          {/* <TexturedMesh /> */}
           <mesh
             name="work_prev_02_1"
             castShadow
