@@ -2,6 +2,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { RoomModel } from "./RoomModel";
+import { Preload } from "@react-three/drei";
 
 export default function ModelSection() {
   return (
@@ -17,6 +18,7 @@ export default function ModelSection() {
         <Suspense>
           <RoomModel />
         </Suspense>
+        <Preload all/>
       </Canvas>
     </div>
   );
