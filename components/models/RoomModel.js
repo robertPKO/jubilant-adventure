@@ -29,7 +29,7 @@ export function RoomModel(props) {
     if (cameraRef.current) {
       // Adjust these values as needed
       cameraRef.current.position.x +=
-        (scrollX - cameraRef.current.position.x) * 0.05;
+        (scrollX - cameraRef.current.position.x) * 0.02;
     }
   });
 
@@ -518,58 +518,6 @@ export function RoomModel(props) {
           material={materials.Tex_03}
           scale={821.018}
         />
-      </group>
-      <group
-        name="Sketchfab_model"
-        position={[0, -25, 200]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        scale={50}
-      >
-        <group name="root">
-          <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
-            <group
-              name="Cube_1"
-              position={[0, 2.559, 0.408]}
-              scale={[0.184, 0.74, 0.74]}
-            >
-              <mesh
-                name="Object_4"
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_4.geometry}
-                material={materials["Material.001"]}
-              />
-              <mesh
-                name="Object_5"
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_5.geometry}
-                material={materials["Material.002"]}
-              />
-              <mesh
-                name="Object_6"
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_6.geometry}
-                material={materials["Material.003"]}
-              />
-              <mesh
-                name="Object_7"
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_7.geometry}
-                material={materials["Material.004"]}
-              />
-              <mesh
-                name="Object_8"
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_8.geometry}
-                material={materials.material_0}
-              />
-            </group>
-          </group>
-        </group>
       </group>
     </group>
   );
