@@ -15,8 +15,10 @@ export default function ModelSection() {
           shadow-mapSize-width={2048} // Increasing shadow map width
           shadow-mapSize-height={2048} // Increasing shadow map height
         />{" "}
-        <RoomModel />
-        <Preload all />
+        <Suspense fallback={null}>
+          <RoomModel />
+        </Suspense>
+        <Preload all/>
       </Canvas>
     </div>
   );
