@@ -182,7 +182,7 @@ export function RoomModel(props) {
           material={nodes.Play_button.material}
           position={[2864.844, 275.825, -115.224]}
         >
-          <Html position={[0, 0, 0]} transform={true}>
+          {/* <Html position={[0, 0, 0]} transform={true}>
             <div className="bg-white w-[5000px] h-[5000px] rounded-[16%] cursor-pointer group overflow-hidden relative border-collapse">
               {" "}
               <div className="bg-red w-full h-full -z-1 absolute transform left-0 top-[100%] rounded-[16%] transition-all duration-2000 ease-in group-hover:top-0 group-hover:opacity-100 opacity-0 " />
@@ -190,7 +190,7 @@ export function RoomModel(props) {
                 Play
               </p>
             </div>
-          </Html>
+          </Html> */}
         </mesh>
         <mesh
           name="portfolio_text_01"
@@ -200,7 +200,7 @@ export function RoomModel(props) {
           material={nodes.portfolio_text_01.material}
           position={[6151.875, 287.038, 0.029]}
         />
-        <Text
+        {/* <Text
           color="black"
           anchorX="center"
           anchorY="middle"
@@ -209,7 +209,7 @@ export function RoomModel(props) {
           fontSize={14.5}
         >
           Your Text Here
-        </Text>
+        </Text> */}
         <mesh
           name="portfolio_text_02"
           castShadow
