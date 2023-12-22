@@ -182,7 +182,15 @@ export function RoomModel(props) {
           material={nodes.Play_button.material}
           position={[2864.844, 275.825, -115.224]}
         >
-          <props.ui.Out />
+          <Html position={[0, 0, 0]} transform={true}>
+            <div className="bg-white w-[5000px] h-[5000px] rounded-[16%] cursor-pointer group overflow-hidden relative border-collapse">
+              {" "}
+              <div className="bg-red w-full h-full -z-1 absolute transform left-0 top-[100%] rounded-[16%] transition-all duration-2000 ease-in group-hover:top-0 group-hover:opacity-100 opacity-0 " />
+              <p className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[1000px] z-1 group-hover:text-white font-bold transition-all duration-500 ease-out">
+                Play
+              </p>
+            </div>
+          </Html>
         </mesh>
         <mesh
           name="portfolio_text_01"
