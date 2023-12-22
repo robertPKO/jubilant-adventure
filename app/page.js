@@ -1,8 +1,5 @@
-"use  client"
-import dynamic from 'next/dynamic';
-
-const Scene = dynamic(() => import('@/components/models/ModelSection'), { ssr: false })
+import ModelSection from '@/components/models/ModelSection';
 
 export default function Home() {
-  return <Scene />;
+  return <><ModelSection /><p>Test</p></>
 }
